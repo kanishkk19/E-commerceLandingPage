@@ -108,6 +108,9 @@ span {
   font-weight: 700;
   line-height: 1.2em;
 }
+p {
+  font-size: 2rem;
+}
 .dollar {
   margin-top: 23px;
 }
@@ -121,7 +124,7 @@ span {
   padding: 75% 75% 0 0;
   border-radius: 50%;
   background: #2193b0;
-  top: 10%;
+  top: 1%;
   left: 10%;
   z-index: -1;
 }
