@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 80%;
+  display: block;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 1%;
+}
+
+section {
+  padding: 5em 0;
+}
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.split {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5em 1.25em;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #535151;
+  color: white;
+  font-size: 1.125rem;
+  border-radius: 0.25em;
+  transition: transform 20ms ease-in-out;
+  margin-top: 2%;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.11);
+  opacity: 0.9;
+}
+
+.btn-buy {
+  background-color: #3f3351;
+}
+
+.main-title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw +1rem), 4rem);
+  line-height: 1.1em;
+  color: rgb(101, 139, 211);
+  text-transform: uppercase;
+}
+
+.hero {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 15rem 0;
+  background: url(images/shoe4.png);
+  background-color: rgb(52, 58, 58);
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.features {
+  background-color: rgb(213, 223, 194);
+  display: block;
+}
+
+.featured-item {
+  display: block;
+  position: relative;
+  transform: scale(0.85);
+  transition: transform 250ms ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+
+span {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+.dollar {
+  margin-top: 23px;
+}
+.featured-item:hover,
+.featured-item:focus {
+  transform: scale(1);
+}
+.featured-item::after {
+  content: "";
+  position: absolute;
+  padding: 75% 75% 0 0;
+  border-radius: 50%;
+  background: #2193b0;
+  top: 10%;
+  left: 10%;
+  z-index: -1;
+}
+
+.product {
+  background: linear-gradient(#bb9eca, #ffafaf);
+  padding: 3em;
+  margin: 3rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.product1 {
+  background: linear-gradient(#e99eab, #db5853);
+}
+.product2 {
+  background: linear-gradient(#afc6eb, #44b1e4);
+}
+.product3 {
+  background: linear-gradient(#e5a5dd, #d844b6);
+}
+
+.product-title {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 2px 2px 4px #3f3351;
+  line-height: 1em;
+}
+
+.product-image {
+  margin: -5em 0 0 0;
+}
+
+@media (max-width: 675px) {
+  .split {
+    flex-wrap: wrap;
+  }
+  .split > a > img {
+    width: 60%;
+    margin: auto;
+  }
+  .featured-item::after {
+    top: 4%;
+    left: 13%;
+  }
+  @media (max-width: 600px) {
+    .product-image {
+      width: 90%;
+      shape-outside: url(../LandingPage/images/shoe4.png);
+    }
+    .product {
+      text-align: left;
+      font-size: 0.8rem;
+    }
+    .product-title {
+      font-size: 1.4rem;
+    }
+  }
+}
